@@ -2,7 +2,7 @@
   <div class="tags__container">
     <ul class="tags__content">
       <li v-for="item in $store.state.tags">
-        <nuxt-link :to="{name: 'article-id', params: {id: item}, query: {tag: item}}">{{item}}</nuxt-link>
+        <nuxt-link :to="{name: 'tag-class', params: {class: item}}">{{item}}</nuxt-link>
       </li>
     </ul>
   </div>

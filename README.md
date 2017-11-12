@@ -1,23 +1,57 @@
-# utau-oy
-
-> Nuxt.js project
-
-## Build Setup
-
-``` bash
-# install dependencies
-$ npm install # Or yarn install
-
-# serve with hot reload at localhost:3000
-$ npm run dev
-
-# build for production and launch server
-$ npm run build
-$ npm start
-
-# generate static project
-$ npm run generate
+# UTAU - BLOG
 ```
-
-For detailed explanation on how things work, checkout the [Nuxt.js docs](https://github.com/nuxt/nuxt.js).
-# utau-oy
+├── README.md
+├── assets
+│   ├── README.md
+│   ├── config.js
+│   ├── css
+│   │   ├── components
+│   │   │   ├── input.scss
+│   │   │   └── menu.scss
+│   │   ├── gloab.scss
+│   │   ├── index.scss
+│   │   ├── mixin.scss
+│   │   ├── transition.scss
+│   │   └── utils.scss
+│   └── js
+│       └── axios.js
+├── components
+│   ├── Article
+│   │   ├── ArticleComment.vue
+│   │   ├── ArticleHeadBg.vue
+│   │   ├── ArticleItem.vue
+│   │   ├── ArticleList.vue
+│   │   └── ArticleMainContent.vue
+│   ├── Head
+│   │   └── index.vue
+│   ├── README.md
+│   ├── Slide
+│   │   └── index.vue
+│   └── Tags
+│       └── index.vue
+├── layouts
+│   ├── README.md
+│   ├── blog.vue
+│   └── default.vue
+├── middleware
+│   └── README.md
+├── nuxt.config.js
+├── package-lock.json
+├── package.json
+├── pages
+│   ├── README.md
+│   ├── article
+│   │   ├── _id.vue
+│   │   └── index.vue
+│   ├── index.vue
+│   └── tag
+│       └── _class.vue
+├── plugins
+│   └── README.md
+├── static
+│   ├── README.md
+│   └── favicon.ico
+└── store
+    ├── README.md
+    └── index.js
+```
