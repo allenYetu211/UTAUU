@@ -22,15 +22,15 @@
   export default {
     layout: 'blog',
     async asyncData({store}) {
-      const data = await axios.ajax('/utau/init-request').then(res => {
-        return res.data.data
+      const data = await axios.ajax('article/articleList').then(res => {
+        return res.data
       })
-      store.commit('setInit', {
-        tags: data.tags
-      })
+      // store.commit('setInit', {
+      //  tags: data.tags
+      // })
       return {
-        articleList: data.article,
-        tags: data.tag
+        articleList: data.content
+        // tags: data.tag
       }
     },
     data() {

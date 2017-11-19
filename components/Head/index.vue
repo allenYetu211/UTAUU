@@ -14,7 +14,8 @@
         </ul>
       </div>
     </div>
-    <slide v-if="$route.name === 'index'"></slide>
+    <!--幻灯片-->
+    <!--<slide v-if="$route.name === 'index'"></slide>-->
   </header>
 
 

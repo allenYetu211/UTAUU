@@ -5,11 +5,11 @@
         {{item.title}}
       </div>
       <div class="article__item--title">
-        <div><span>{{item.publishItem}}</span> |
-          <nuxt-link :to="{name: 'article-id', params: {id: item.articleId}}">LIVESTYLE</nuxt-link>
+        <div><span>{{item.timestamp}}</span> |
+          <nuxt-link :to="{name: 'article-id', params: {id: item._id}}">LIVESTYLE</nuxt-link>
         </div>
         <h2>
-          <nuxt-link :to="{name: 'article-id', params: {id: item.articleId}}">{{item.title}}</nuxt-link>
+          <nuxt-link :to="{name: 'article-id', params: {id: item._id}}">{{item.title}}</nuxt-link>
         </h2>
       </div>
     </div>

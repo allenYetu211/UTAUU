@@ -2,7 +2,7 @@
   <div>
     <article-head-bg :item="item"></article-head-bg>
     <div class="article__item--container">
-    <article-main-content :item="item" :allContent="true"></article-main-content>
+      <article-main-content :item="item" :allContent="true"></article-main-content>
     </div>
   </div>
 </template>
@@ -14,11 +14,13 @@
 
   export default {
     layout: 'blog',
-    async asyncData() {
-      const data = await axios.ajax(`/utau/article-id/article-1`).then(res => {
-        return res.data.data.article
+    async asyncData({route}) {
+      const data = await axios.ajax('article/findArticle', {}, 'GET', {
+        articleId: route.params.id
+      }).then(res => {
+        console.log(res.data)
+        return res.data
       })
-      console.log(data)
       return {item: data}
     },
     components: {

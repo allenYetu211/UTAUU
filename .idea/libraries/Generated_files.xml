@@ -1,22 +1,5 @@
 <component name="libraryTable">
   <library name="Generated files" type="javaScript">
-    <properties>
-      <sourceFilesUrls>
-        <item url="file://$PROJECT_DIR$/dist/nuxt.config.js" />
-        <item url="file://$PROJECT_DIR$/dist/.eslintrc.js" />
-        <item url="file://$PROJECT_DIR$/dist/.nuxt/components/nuxt-child.js" />
-        <item url="file://$PROJECT_DIR$/dist/assets/js/axios.js" />
-        <item url="file://$PROJECT_DIR$/dist/assets/config.js" />
-        <item url="file://$PROJECT_DIR$/dist/.nuxt/store.js" />
-        <item url="file://$PROJECT_DIR$/dist/.nuxt/middleware.js" />
-        <item url="file://$PROJECT_DIR$/dist/store/index.js" />
-        <item url="file://$PROJECT_DIR$/dist/.nuxt/components/nuxt-link.js" />
-        <item url="file://$PROJECT_DIR$/dist/.nuxt/client.js" />
-        <item url="file://$PROJECT_DIR$/dist/.nuxt/server.js" />
-        <item url="file://$PROJECT_DIR$/dist/.nuxt/empty.js" />
-        <item url="file://$PROJECT_DIR$/dist/.nuxt/components/no-ssr.js" />
-      </sourceFilesUrls>
-    </properties>
     <CLASSES>
       <root url="file://$PROJECT_DIR$/dist/nuxt.config.js" />
       <root url="file://$PROJECT_DIR$/dist/.eslintrc.js" />
