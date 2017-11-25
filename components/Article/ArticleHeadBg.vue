@@ -5,7 +5,7 @@
         {{item.title}}
       </div>
       <div class="article__item--title">
-        <div><span>{{item.timestamp}}</span> |
+        <div><span>{{item.timestamp | dispose}}</span> |
           <nuxt-link :to="{name: 'article-id', params: {id: item._id}}">LIVESTYLE</nuxt-link>
         </div>
         <h2>
@@ -15,21 +15,33 @@
     </div>
 
     <div class=" article__item--image"
-         :style="{backgroundImage: 'url(' + item.articleImg + ')'}"></div>
+         :style="{backgroundImage: 'url(\'http://' + item.picture + '\')'}"></div>
   </div>
 </template>
 <script>
   export default {
-    props: ['item']
+    props: ['item'],
+    filters: {
+      dispose(val) {
+        let date = new Date(val)
+        let Y = date.getFullYear() + '-'
+        let M = (date.getMonth() + 1 < 10 ? '0' + (date.getMonth() + 1) : date.getMonth() + 1) + '-'
+        let D = date.getDate() + ' '
+        let h = (date.getHours() < 10 ? '0' + date.getHours() : date.getHours()) + ':'
+        let m = (date.getMinutes() < 10 ? '0' + date.getMinutes() : date.getMinutes()) + ':'
+        let s = (date.getSeconds() < 10 ? '0' + date.getSeconds() : date.getSeconds())
+        return Y + M + D + h + m + s
+      }
+    }
   }
 </script>
 
 <style lang="scss">
   @import '../../assets/css/utils';
+
   .article__item--head {
     padding: 40px 0;
     position: relative;
-    background-color: #fbfbfb;
     .article__item--title {
       text-align: center;
       color: #999;

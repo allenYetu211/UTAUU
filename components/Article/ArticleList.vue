@@ -2,7 +2,9 @@
   <div class="article__list">
     <ul>
       <li v-for="item in articleList">
-        <article-item :item="item"></article-item>
+        <out-line :border="'bottom'">
+          <article-item :item="item"></article-item>
+        </out-line>
       </li>
     </ul>
 
@@ -15,6 +17,7 @@
 
 <script>
   import ArticleItem from './ArticleItem.vue'
+  import OutLine from '~/components/Ui/uiOutline'
 
   export default {
     props: {
@@ -26,7 +29,8 @@
       }
     },
     components: {
-      ArticleItem
+      ArticleItem,
+      OutLine
     }
   }
 </script>

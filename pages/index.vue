@@ -49,7 +49,5 @@
 
   @import "../assets/css/gloab.scss";
 
-  .utau__container {
-    padding: 0 0 0 30px;
-  }
+
 </style>

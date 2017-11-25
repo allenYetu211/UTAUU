@@ -1,6 +1,5 @@
 <template>
   <div class="article__item">
-
     <article-head-bg :item="item"></article-head-bg>
     <div class="article__item--container">
       <article-main-content :item="item"></article-main-content>
@@ -30,7 +29,6 @@
 
   .article__item {
     margin-bottom: 40px;
-    background-color: #fbfbfb;
     text-transform: uppercase;
   }
 
