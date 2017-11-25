@@ -29,12 +29,12 @@
   }
 
   .ui__outline {
-    border-top: 4px solid #000;
-    border-bottom: 4px solid #000;
+    border-top: 4px solid #333;
+    border-bottom: 4px solid #333;
 
   }
 
   .ui__bottom {
-    border-bottom: 4px solid #000;
+    border-bottom: 4px solid #333;
   }
 </style>
