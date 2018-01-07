@@ -1,4 +1,5 @@
 module.exports = {
+  loading: '~/components/Loading/loading.vue',
   plugins: [{
     src: '~plugins/vue-notifications',
     ssr: false
@@ -20,7 +21,7 @@ module.exports = {
   /*
   ** Customize the progress bar color
   */
-  loading: {color: '#3B8070'},
+  // loading: {color: '#3B8070'},
   /*
   ** Build configuration
   */
@@ -44,5 +45,27 @@ module.exports = {
     css: [
       {src: '~/assets/style/global.scss', lang: 'scss'}
     ]
-  }
+  },
+  transition: {
+    name: 'fade',
+    mode: 'out-in'
+  },
+  head: {
+    title: 'UTAU | This\'s display About me blog',
+    titleTemplate: 'UTAU | Ouy',
+    htmlAttrs: {
+      lang: 'zh'
+    }
+  },
+    meta: [
+      { charset: 'utf-8' },
+      { 'http-equiv': 'cleartype', content: 'on' },
+      { name: 'author', content: 'surmon@foxmail.com' },
+      { name: 'MobileOptimized', content: '320' },
+      { name: 'HandheldFriendly', content: 'True' },
+      { name: 'apple-mobile-web-app-capable', content: 'yes' },
+      { name: 'viewport', content: 'width=device-width, initial-scale=1.0, user-scalable=no' },
+      { hid: 'keywords', name: 'keywords', content: 'UTAU,AllenOYang,Vue教程,前端技术开发,javascript技术' },
+      { hid: 'description', name: 'description', content: '知行' }
+    ]
 }

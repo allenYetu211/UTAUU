@@ -24,6 +24,7 @@
     "marked": "^0.3.6",
     "node-sass": "^4.6.0",
     "nuxt": "^1.0.0-rc11",
+    "p5": "^0.5.16",
     "sass-loader": "^6.0.6",
     "vue-awesome-swiper": "^2.6.7"
   },

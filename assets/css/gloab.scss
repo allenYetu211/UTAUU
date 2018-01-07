@@ -2,7 +2,8 @@
 @import './components/menu';
 
 html {
-  font-family: "PingFangSC", "Source Han Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  //font-family: "PingFangSC", "Source Han Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family: system-ui,Helvetica,"Helvetica Neue","Franklin Gothic","ITC Franklin Gothic",Arial,sans-serif;
   font-size: 16px;
   word-spacing: 1px;
   -ms-text-size-adjust: 100%;
@@ -17,14 +18,13 @@ html {
   margin: 0;
   outline: none;
 }
-html {
-  font-family: 'Roboto',sans-serif;
-}
+
 body {
-  padding: 20px 20px 0;
-  background: $body-bg;
+  //padding: 20px 20px 0;
+  background: #f7d708;
   color: $text-df;
-  font-weight: 200;
+  //font-weight: 200;
+
 }
 
 .layout-mobile {
@@ -65,8 +65,8 @@ a {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-weight: 400;
-  padding: 0 $innerPad;
+  font-weight: 700;
+  //padding: 0 $innerPad;
 }
 
 h1 {
@@ -247,3 +247,18 @@ i.icon-section {
   }
 }
 
+/* 设置滚动条的样式 */
+::-webkit-scrollbar {
+  width:4px;
+}
+/* 滚动槽 */
+::-webkit-scrollbar-track {
+  border-radius:10px;
+}
+/* 滚动条滑块 */
+::-webkit-scrollbar-thumb {
+  background-color:#262626;
+}
+::-webkit-scrollbar-thumb:window-inactive {
+  background:rgba(255,0,0,0.4);
+}

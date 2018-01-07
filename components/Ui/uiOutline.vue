@@ -6,7 +6,6 @@
     <div class=" ui__distance ui__bottom" v-if="border==='bottom'">
       <slot></slot>
     </div>
-
   </div>
 
 
