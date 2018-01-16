@@ -52,7 +52,7 @@ module.exports = {
   },
   head: {
     title: 'UTAU | This\'s display About me blog',
-    titleTemplate: 'UTAU | Ouy',
+    titleTemplate: 'UTAU | Allen OYang',
     htmlAttrs: {
       lang: 'zh'
     }

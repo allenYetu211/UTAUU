@@ -17,6 +17,9 @@
       <div class="wrapper__container section__style">
         <div class="home__explain">
           <h2>第一次来的朋友!<br/>可以留下你的名字吗？</h2>
+          <p>
+            <nuxt-link :to="{name:'Chat'}">我们来说说话吧 >>></nuxt-link>
+          </p>
         </div>
       </div>
 
@@ -60,7 +63,7 @@
     width: 85%;
     max-width: 1080px;
     margin: 0 auto;
-    &.wrapper__table{
+    &.wrapper__table {
       padding-bottom: 1em;
     }
   }
@@ -98,11 +101,13 @@
       width: 12em;
     }
   }
-  .home__article--know-more{
+
+  .home__article--know-more {
     font-size: 1.63157895em;
     line-height: 1.87096774em;
     margin-top: 0.93548387em;
   }
+
   .home__explain {
     display: grid;
     grid-template-columns: repeat(12 / 1fr);

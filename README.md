@@ -36,7 +36,7 @@
 ├── middleware
 │   └── README.md
 ├── nuxt.config.js
-├── package-lock.json
+├── package-lock.js
 ├── package.json
 ├── pages
 │   ├── README.md

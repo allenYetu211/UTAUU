@@ -7,7 +7,7 @@
   "config": {
     "nuxt": {
       "host": "0.0.0.0",
-      "port": "3030"
+      "port": "8080"
     }
   },
   "scripts": {
@@ -26,6 +26,7 @@
     "nuxt": "^1.0.0-rc11",
     "p5": "^0.5.16",
     "sass-loader": "^6.0.6",
+    "socket.io-client": "^2.0.4",
     "vue-awesome-swiper": "^2.6.7"
   },
   "devDependencies": {
